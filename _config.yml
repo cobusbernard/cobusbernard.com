@@ -1,59 +1,80 @@
-# Site wide configuration
+# Site settings
 
-title:            Cobus Bernard
-locale:           en_US
-url:
+url: "http://cobusbernard.com"
+title: "{ Cobus Bernard }"
+description: "Blog and website of Cobus Bernard, blogging mainly about tech / tech industry. Opinions expressed are mine."
+keywords: "cobus, bernard, cobus bernard, technology, C#, devops, chef, ansible, aws, amazon webservices, ec2, linux"
+favicon: "/img/favicon.ico"
+black-favicon: "/img/favicon.ico"
+google-tracking-id: "UA-50457526-1"
+disqus-shortname: "cobusbernard"
 
+# Navigation bar links
+# Blog link in the blog and post pages will point to the blog.html#blog
+# In the default page it will point to the preview of the last post
 
-# Jekyll configuration
+pages_list:
+  About: 'about'
+  Blog: 'blog'
+  Career: 'career'
+  Contact: 'contact'
 
-permalink:   /:categories/:title/
-markdown:    kramdown
-highlighter: pygments
-sass:
-  sass_dir: _sass
-  style: compressed
-gems:
-  - jekyll-sitemap
+background-img: "/img/cpt-bg-2.jpg"
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
+# About variables
 
+me-img: "http://www.gravatar.com/avatar/9864cccf5b8d379f9a5bfdcc0d7b33d5?s=150"
 
-# Site owner
-owner:
-  name: Cobus Bernard
-  avatar: http://www.gravatar.com/avatar/9864cccf5b8d379f9a5bfdcc0d7b33d5?s=150
-  bio: "Button punching monkey"
-  email:
-  disqus-shortname:
-  twitter: cobusbernard
-  facebook: #username
-  google:
-    plus: cobusbernard
-    analytics: UA-50457526-1
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
-  github: #username
-  stackoverflow:
-  linkedin: #username
-  instagram: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
+# Blog variables
+paginate: 15
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+paginate_path: "blog/page:num"
+
+post-preview-words: 128
+
+fb-share: True
+twitter-share: True
+reddit-share: True
+
+# Career variables
+
+events:
+  - image: "/img/career/blazingchilli.png"
+    date: "March 2015 - Today"
+    description: "Building distributed platform using C# / .Net. Automating all things with Ansible, Chef, Jenkins and Powershell."
+  - image: "/img/career/lightsail.png"
+    date: "April 2014 - January 2015"
+    description: "Technical Team Lead"
+  - image: "/img/career/aci.png"
+    date: "April 2013 - March 2014"
+    description: "ISO 8583"
+  - image: "/img/career/gk.jpg"
+    date: "August 2010 - March 2013"
+    description: "Went over to the darkside, aka Microsoft."
+  - image: "/img/career/redshift.png"
+    date: "November 2005 - January 2010"
+    description: "Introduced to Linux, ran Gentoo for 4 years, built Java based apps with SQL server and some other bits."
+  - image: "/img/career/cput.png"
+    date: "January 2005 - November 2005"
+    description: "National Diploma in Electrical Engineering: Computer systems @ <a href=\"http://www.cput.ac.za\" target=\"_blank\">Department of Engineer</a>"
+
+# First image of the Career timeline
+career-img: "/img/career/default.jpg"
+
+# Social networks variables (many more available: facebook, flickr, dribbble, pinterest, instagram, tumblr etc.)
+social:
+  - title: "rss"
+    url: "/feed.xml"
+  - title: "github"
+    url: "https://github.com/cobusbernard"
+  - title: "linkedin"
+    url: "http://za.linkedin.com/in/CobusBernard"
+  - title: "google+"
+    url: "https://plus.google.com/+cobusbernard"
+  - title: "soundcloud"
+    url: "https://soundcloud.com/psakkos/"
+
+404-img: "/img/labtocat.png"
+
+# Exclusion list from the generated _site
+exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor", "Vagrantfile", "install_jekyll.sh", "servers.yaml"]
