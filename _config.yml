@@ -3,7 +3,7 @@
 url: "http://cobusbernard.com"
 title: "{ Cobus Bernard }"
 description: "Blog and website of Cobus Bernard, blogging mainly about tech / tech industry. Opinions expressed are mine."
-keywords: "cobus, bernard, cobus bernard, technology, C#, devops, chef, ansible, aws, amazon webservices, ec2, linux"
+keywords: "cobus, bernard, cobus bernard, cobusbernard"
 favicon: "/img/favicon.ico"
 black-favicon: "/img/favicon.ico"
 google-tracking-id: "UA-50457526-1"
@@ -15,20 +15,20 @@ disqus-shortname: "cobusbernard"
 
 pages_list:
   About: 'about'
-  Blog: 'blog'
+#  Blog: 'blog'
   Career: 'career'
   Contact: 'contact'
 
-background-img: "/img/cpt-bg-2.jpg"
+background-img: "/img/cpt-bg-3.jpg"
 
 # About variables
 
 me-img: "http://www.gravatar.com/avatar/9864cccf5b8d379f9a5bfdcc0d7b33d5?s=150"
 
 # Blog variables
-paginate: 15
+#paginate: 15
 
-paginate_path: "blog/page:num"
+#paginate_path: "blog/page:num"
 
 post-preview-words: 128
 
@@ -39,24 +39,33 @@ reddit-share: True
 # Career variables
 
 events:
+  - image: "/img/career/healthq.png"
+    date: "March 2016 - Current"
+    description: "<a href=\"http://www.healthq.co\" target=\"_blank\">HealthQ Technologies</a>:<br/>Automating & managing everything AWS with Chef, Ansible and Terraform."
+  - image: "/img/career/devopsdays_cpt.png"
+    date: "March 2016 - Current"
+    description: "<a href=\"https://www.devopsdays.org\" target=\"_blank\">DevOpsDays Cape Town</a>:<br/>Started organising the the yearly conference."
+  - image: "/img/career/devops_cpt.png"
+    date: "May 2015 - Current"
+    description: "<a href=\"http://devops.capetown\" target=\"_blank\">DevOps Cape Town</a>:<br/>Started organising the the monthly meetup group."
   - image: "/img/career/blazingchilli.png"
-    date: "March 2015 - Today"
-    description: "Building distributed platform using C# / .Net. Automating all things with Ansible, Chef, Jenkins and Powershell."
+    date: "March 2015 - February 2016"
+    description: "<a href=\"http://www.blazingchilli.com\" target=\"_blank\">Blazingchilli</a>: <br/>Building distributed platform using C# / .Net. Automating all things with Ansible, Chef, Jenkins and Powershell."
   - image: "/img/career/lightsail.png"
     date: "April 2014 - January 2015"
-    description: "Technical Team Lead"
+    description: "<a href=\"http://lightsailed.com/\" target=\"_blank\">LightSail Education</a>:<br/>Technical Team Lead"
   - image: "/img/career/aci.png"
     date: "April 2013 - March 2014"
-    description: "ISO 8583"
+    description: "<a href=\"https://www.aciworldwide.com\" target=\"_blank\">ACI Worldwide</a>:<br/>ISO 8583"
   - image: "/img/career/gk.jpg"
     date: "August 2010 - March 2013"
-    description: "Went over to the darkside, aka Microsoft."
+    description: "<a href=\"http://www.globalkinetic.com\" target=\"_blank\">Globak Kinetic</a>:<br/>Went over to the darkside, aka Microsoft."
   - image: "/img/career/redshift.png"
     date: "November 2005 - January 2010"
-    description: "Introduced to Linux, ran Gentoo for 4 years, built Java based apps with SQL server and some other bits."
+    description: "<a href=\"http://www.redshift.co.za\" target=\"_blank\">Redshift Digital</a>: Introduced to Linux, ran Gentoo for 4 years, built Java based apps with SQL server and some other bits."
   - image: "/img/career/cput.png"
     date: "January 2005 - November 2005"
-    description: "National Diploma in Electrical Engineering: Computer systems @ <a href=\"http://www.cput.ac.za\" target=\"_blank\">Department of Engineer</a>"
+    description: "Student:<br/>National Diploma in Electrical Engineering: Computer systems @ <a href=\"http://www.cput.ac.za\" target=\"_blank\">Department of Engineer</a>"
 
 # First image of the Career timeline
 career-img: "/img/career/default.jpg"
@@ -69,12 +78,10 @@ social:
     url: "https://github.com/cobusbernard"
   - title: "linkedin"
     url: "http://za.linkedin.com/in/CobusBernard"
-  - title: "google+"
-    url: "https://plus.google.com/+cobusbernard"
-  - title: "soundcloud"
-    url: "https://soundcloud.com/psakkos/"
+  - title: "twitter"
+    url: "https://twitter.com/cobusbernard"
 
 404-img: "/img/labtocat.png"
 
 # Exclusion list from the generated _site
-exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor", "Vagrantfile", "install_jekyll.sh", "servers.yaml"]
+exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor", "Vagrantfile", "install_jekyll.sh", "servers.yaml", "Dockerfile", "Makefile"]

@@ -28,7 +28,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       ports = servers["ports"]
 
 	    ports.each do |prt|
-		    srv.vm.network "forwarded_port", guest: prt.to_i, host: prt.to_i
+		    srv.vm.network "forwarded_port", guest: prt["from_port"].to_i, host: prt["to_port"].to_i
 	    end
 
       srv.vm.provision "shell", path: servers["provision_script"]

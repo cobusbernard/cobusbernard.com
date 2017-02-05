@@ -1,7 +1,9 @@
 ---
-- name: jekyll
+- name: jekyll-cobusbernard.com
   box: ubuntu/trusty64
   ram: 512
-  ip: 172.17.8.101
-  ports: [ 80, 4000 ]
+  ip: 172.17.8.102
+  ports: 
+   - from_port: 4000
+     to_port: 4001
   provision_script: install_jekyll.sh
